@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>りたるだんどな日々 - フリーBGM</title>
+  <meta name="description" content="音楽大好きで色々やってます。フリーBGM作ってます。ブログもやってます。">
+  <meta name="keywords" content="BGM, フリーBGM, 作曲, 音楽, ブログ, パーカッション, 無料, 音楽無料, りたるだんどな日々">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="fabikonn.png" type="image/png">
+<script>
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    window.location.href = "mobile.html";
+  }
+</script>
+
+</head>
+<body>
+
+  <!-- ヘッダーを読み込む -->
+  <div id="header-placeholder"></div>
+
+  <div class="container">
+    <!-- 左カラム -->
+    <aside class="sidebar-left">
+      <a href="index.html">HOME</a>
+      <a href="bgm.html">フリーBGM</a>
+      <a href="blog.html">Blog</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">利用規約</a>
+      <!-- YouTube埋め込み -->
+      <div class="youtube-embed">
+        <iframe width="200" height="113" src="https://www.youtube.com/embed/J1gr8LHaM64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-embed">
+        <iframe width="200" height="113" src="https://www.youtube.com/embed/T9b_P6JU0dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-embed">
+        <iframe width="200" height="113" src="https://www.youtube.com/embed/2J1OkmxEXLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-embed">
+        <iframe width="200" height="113" src="https://www.youtube.com/embed/pKC8PEoPzmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-embed">
+        <iframe width="200" height="113" src="https://www.youtube.com/embed/VHkpybIoLFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <!-- 中央カラム -->
+    <main class="content">
+      <h2>フリーBGM</h2>
+      <div class="song">
+        <h3>エンディング2.mp3</h3>
+        <audio controls>
+          <source src="エンディング2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br>
+        <a class="button" href="エンディング2.mp3" download>Download</a>
+      </div>
+      <br>
+      <div class="song">
+        <h3>エンディング1.mp3</h3>
+        <audio controls>
+          <source src="エンディング1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br>
+        <a class="button" href="エンディング1.mp3" download>Download</a>
+      </div>
+
+
+      
+    </main>
+
+    <!-- 右カラムを読み込む -->
+    <div id="sidebar-right-placeholder"></div>
+  </div>
+
+  <!-- フッターを読み込む -->
+  <div id="footer-placeholder"></div>
+
+  <!-- 共通パーツ読み込み用JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // ヘッダーを読み込む
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+
+      // 右カラムを読み込む
+      fetch('sidebar-right.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('sidebar-right-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+
+      // フッターを読み込む
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

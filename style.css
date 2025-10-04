@@ -1,0 +1,219 @@
+/* 共通スタイル */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ /* ----------------------- ヘッダー（4800x300） ----------------------- */
+header { 
+  width: 100%;
+  height: 130px;
+  /* 高さお好み */
+  background: url('header.png') no-repeat center center;
+  background-size: cover;
+  position: fixed; /* 追加: 画面上部に固定 */
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */ 
+  flex-shrink: 0; /* 追加：ヘッダーが縮まないように */
+}
+
+/* コンテナ */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  min-height: calc(100vh - 130px); /* ヘッダーの高さを差し引く */
+  box-sizing: border-box;
+  gap: 20px;
+  flex-wrap: nowrap;
+  padding-top: 130px; /* ヘッダーとの間に余白 */
+}
+
+/* 左カラム */
+.sidebar-left {
+  width: 220px;
+  background: #f2c474;
+  background-image: url('pattern.png');
+  background-repeat: repeat;
+  background-size: 250px 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-left a {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #612d00;
+  font-weight: bold;
+  border-radius: 0px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
+}
+
+.sidebar-left a:hover {
+  background-color: #ffe08a;
+  color: #612d00;
+}
+
+/* YouTube埋め込み部分の背景を白に */
+.sidebar-left .youtube-embed {
+  margin-top: 20px;
+  text-align: center;
+  background: white;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+/* YouTube埋め込みの中央寄せとサイズ調整 */
+.sidebar-left iframe {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 中央カラム */
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 右カラム */
+.sidebar-right {
+  width: 220px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.sidebar-right img {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar-right h3 {
+  margin: 5px 0;
+  color: #d35400;
+}
+
+.sidebar-right p {
+  margin: 2px 0;
+  font-size: 0.9em;
+}
+
+/* 見出し */
+h2 {
+  color: #d35400;
+  border-bottom: 2px solid #d35400;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* フッター */
+footer {
+  background-color: #d35400;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  flex-shrink: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #fff2e0;
+}
+
+/* ダウンロードボタン */
+a.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #d35400;
+  color: white;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+a.button:hover {
+  background: #ff7f50;
+}
+
+/* ブログリスト */
+ul.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.blog-list li {
+  margin-bottom: 8px;
+}
+
+ul.blog-list li a {
+  color: #d35400;
+  text-decoration: none;
+}
+
+ul.blog-list li a:hover {
+  color: #ff7f50;
+}
+
+/* ブログ日時 */
+.blog-date {
+  font-size: 0.9em;
+  color: #1a0080;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* 更新履歴 */
+.update-log h4 {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #e65100;
+  font-family: 'CorporateLogoM', sans-serif;
+}
+
+.update-log ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.update-log li {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+
+
+
